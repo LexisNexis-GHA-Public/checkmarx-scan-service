@@ -1,5 +1,5 @@
-name: "Run Checkmarx Scan for SBS services"
-description : Runs checkmarx scans for SBS services
+name: "LNRS Checkmarx Scan Service"
+description : Run Checkmarx Scan for LNRS
 inputs:
   cx_username:
     description: the checkmarx username
