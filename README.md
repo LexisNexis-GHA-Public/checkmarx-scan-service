@@ -1,4 +1,4 @@
-# Checkmarx Scan Service for SBS 
+# LNRS Checkmarx Scan Service
 ## Usage in action
 
     runs-on: [docker, no-db]
