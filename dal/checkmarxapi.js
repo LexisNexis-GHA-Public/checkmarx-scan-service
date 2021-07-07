@@ -1,6 +1,6 @@
 const axios     = require("axios");
 const https     = require("https");
-const cxApiUrl  = "https://checkmarx.rbxd.ds/cxrestapi";
+const cxApiUrl  = "https://alawpcxmgr201.risk.regn.net/cxrestapi";
 
 const cmInstance = axios.create({
     httpsAgent: new https.Agent({
