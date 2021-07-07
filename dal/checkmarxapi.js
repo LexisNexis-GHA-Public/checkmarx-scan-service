@@ -20,8 +20,9 @@ async function LoginAsync(username, password){
     let params = new URLSearchParams();
     params.append("username", username);
     params.append("password", password);
+    params.append("team", "/CxServer/SP/Risk/Rules Framework")
     params.append("grant_type", "password");
-    params.append("scope", "sast_rest_api");
+    params.append("scope", "access_control_api sast_rest_api");
     params.append("client_id", "resource_owner_client");
     params.append("client_secret", "014DF517-39D1-4453-B7B3-9930C563627C");
 
