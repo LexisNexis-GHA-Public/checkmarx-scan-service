@@ -19,9 +19,9 @@ class Checkmarx {
 
     createProject = async (projectName, teamId) => {
         let createResult = await dal.CreateNewProectAsync(projectName, teamId, this.bearerToken);
-        let projectId = createResult.id;
-
         console.log(createResult);
+
+        let projectId = createResult.id;
 
         console.log(`Using Project ID: ${projectId}`);
 
