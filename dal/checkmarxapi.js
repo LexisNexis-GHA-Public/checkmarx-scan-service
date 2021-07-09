@@ -32,7 +32,8 @@ async function LoginAsync(username, password){
 }
 
 async function GetProjectByNameAndIdAsync(projectName, teamId, bearerToken){
-    let url = `${cxApiUrl}/projects?projectName=${projectName}&teamId=${teamId}`;
+    let encTeamId = encodeURI(teamId)
+    let url = `${cxApiUrl}/projects?projectName=${projectName}&teamId=${encTeamId}`;
 
     let config = {
         headers: {
