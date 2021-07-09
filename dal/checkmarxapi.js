@@ -46,6 +46,9 @@ async function GetProjectByNameAndIdAsync(projectName, teamId, bearerToken){
             return result.data;
         })
         .catch((err) => {
+            console.log(url);
+            console.log(config);
+            console.log(err);
             return null;
         });
 }
