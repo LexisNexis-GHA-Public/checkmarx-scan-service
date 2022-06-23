@@ -15,7 +15,7 @@ class CheckmarxGitHubApp {
 
         let payload = {
             iat: Math.floor(new Date().getTime() / 1000) - 60,
-            exp: Math.floor(new Date().getTime() / 1000) + (10 * 60),
+            exp: Math.floor(new Date().getTime() / 1000) + (2 * 60),
             iss: this.id
         };
         

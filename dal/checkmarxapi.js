@@ -77,7 +77,7 @@ async function UpsertStandardScanSettingsAsync(projectId, bearerToken){
     let url = `${cxApiUrl}/sast/scansettings`;
     let body = {
         projectId: projectId,
-        presetId: 100001, //standard for sbs
+        presetId: 46, //standard for sbs
         engineConfigurationId: 1 // standard for sbs
     };
 
