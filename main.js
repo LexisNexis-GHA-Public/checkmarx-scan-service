@@ -150,6 +150,9 @@ async function main(){
                 core.info(`==> Failing check, risk threshold breached`);
                 throw "Scan Severity is greater than set risk threshold";
             }
+        } else if (status.status.name.toLowerCase() === "failed") {
+            core.info("==> Failing check, Checkmarx has returned a 'failed' result");
+            throw "Checkmarx has returned a 'failed' result";
         } else {
             core.info(`====> Scan Checked after ${getExecutionTime(startDate)} seconds.  Current Status: ${status.status.name} `);
         }
