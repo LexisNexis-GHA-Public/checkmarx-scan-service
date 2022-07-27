@@ -4,7 +4,7 @@
     runs-on: [docker, no-db]
     steps:
         - name: Run Checkmarx Scan for SBS services
-          uses: LexisNexis-GHA-Public/checkmarx-scan-service@1.1.0
+          uses: LexisNexis-GHA-Public/checkmarx-scan-service@1.3.0
         with:
           cx_username: ${{ secrets.CHECKMARX_USERNAME }}
           cx_password: ${{ secrets.CHECKMARX_PASSWORD }}
